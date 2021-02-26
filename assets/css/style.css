@@ -128,6 +128,10 @@ body {
     color: #ffc107;
 }
 
+.skill-vuejs {
+    color: #41B883;
+}
+
 .skill-python {
     line-height: 1px;
     color: #306998;
@@ -166,6 +170,10 @@ body {
 
 .progress-bar-js {
     background-color: #ffc107;
+}
+
+.progress-bar-vuejs {
+    background-color: #41B883;
 }
 
 .progress-bar-python {
