@@ -1,0 +1,280 @@
+body {
+    font-family: 'Roboto';
+}
+
+/* Scrollbar Style */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ebebeb;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #7e22ce;
+    border-radius: 100px;
+}
+
+.font-inter {
+    font-family: 'Inter';
+}
+
+.font-weight-medium {
+    font-weight: 500;
+}
+
+.bg-color-1 {
+    background-color: #7e22ce;
+}
+
+.color-1 {
+    color: #7e22ce;
+}
+
+.color-2 {
+    color: #111827;
+}
+
+.color-3 {
+    color: #6b7280;
+}
+
+/* ==== Navbar ==== */
+.navbar-brand {
+    color: #7e22ce !important;
+    font-family: 'Inter';
+}
+
+.nav-item {
+    padding-right: 7px;
+}
+
+.nav-item .active {
+    color: #7e22ce !important;
+}
+
+.nav-link {
+    color: #6b7280 !important;
+}
+
+.nav-link:hover {
+    color: #7e22ce !important;
+}
+
+/* ==== Padding Per Page ==== */
+.profile-heading,
+.skill-heading,
+.experience-heading,
+.portfolio-heading,
+.contact-heading {
+    padding-top: 65px;
+}
+
+/* ==== Jumbotron ==== */
+.jumbotron {
+    background-color: #f6f7fb;
+    height: 100vh;
+}
+
+.btn-socmed {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.btn-socmed:hover {
+    color: #7e22ce;
+    transition: all 0.3s;
+}
+
+.btn-jumbotron {
+    font-size: 18px;
+    box-shadow: 0px 3px 9px rgba(126, 34, 206, 0.5);
+}
+
+.btn-explore:hover {
+    box-shadow: 0px 3px 15px rgb(126, 34, 206, 0.5);
+}
+
+.btn-explore:active {
+    box-shadow: 0px 0px 0px rgb(126, 34, 206, 0.5);
+}
+
+/* ==== Profile ==== */
+.profile-img {
+    height: 300px !important;
+    margin-top: -100px;
+    object-fit: cover;
+}
+
+/* ==== Skill ==== */
+.skill-html {
+    line-height: 1px;
+    color: #e34c26;
+}
+
+.skill-css {
+    line-height: 1px;
+    color: #264de4;
+}
+
+.skill-bootstrap {
+    line-height: 1px;
+    color: #7211f5;
+}
+
+.skill-js {
+    line-height: 1px;
+    color: #ffc107;
+}
+
+.skill-python {
+    line-height: 1px;
+    color: #306998;
+}
+
+.tools-linux {
+    line-height: 1px;
+    color: #0b57a4
+}
+
+.tools-vscode {
+    line-height: 1px;
+    color: #0078d7;
+}
+
+.tools-git {
+    line-height: 1px;
+    color: #f34f29;
+}
+
+.skill-tools-progress {
+    background-color: #ebebeb;
+}
+
+.progress-bar-html {
+    background-color: #e34c26;
+}
+
+.progress-bar-css {
+    background-color: #264de4;
+}
+
+.progress-bar-bootstrap {
+    background-color: #7211f5;
+}
+
+.progress-bar-js {
+    background-color: #ffc107;
+}
+
+.progress-bar-python {
+    background-color: #306998;
+}
+
+.progress-bar-linux {
+    background-color: #0b57a4;
+}
+
+.progress-bar-vscode {
+    background-color: #0078d7;
+}
+
+.progress-bar-git {
+    background-color: #f34f29;
+}
+
+/* ==== Experience ==== */
+.experience-card {
+    box-shadow:
+        0 1px 3.2px rgba(0, 0, 0, 0.028),
+        0 2.6px 8.8px rgba(0, 0, 0, 0.04),
+        0 6.3px 21.1px rgba(0, 0, 0, 0.052),
+        0 21px 70px rgba(0, 0, 0, 0.08);
+}
+
+/* ==== Portfolio ==== */
+.portfolio-image-wrapper {
+    position: relative;
+}
+
+.portfolio-img {
+    border-radius: 10px;
+}
+
+.portfolio-img-overlay {
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #7e22ce;
+}
+
+.portfolio-image-wrapper:hover .portfolio-img-overlay {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.portfolio-text-overlay {
+    font-size: 20px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.portfolio-categories-overlay {
+    font-size: 14px;
+    position: absolute;
+    top: 61%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.portfolio-modal-tag {
+    border: 1px solid #7e22ce;
+    border-radius: 5px;
+}
+
+.portfolio-modal-btn {
+    background-color: #7e22ce;
+}
+
+/* ==== Contact ==== */
+.contact-card {
+    background-color: #7e22ce;
+    color: white;
+}
+
+.contact-card-content {
+    padding-top: 6px;
+}
+
+.contact-email {
+    font-size: 30px;
+}
+
+.btn-say-hello {
+    background-color: white;
+    color: #7e22ce;
+    margin-top: 25px;
+}
+
+.btn-say-hello:hover {
+    color: #7e22ce;
+    box-shadow: 2px, 2px, 2px white;
+}
+
+/* ==== Footer ==== */

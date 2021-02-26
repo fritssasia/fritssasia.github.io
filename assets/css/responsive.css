@@ -1,0 +1,163 @@
+/* ==== Max width 320px ==== */
+@media (max-width: 320px) {
+    .btn-download-cv {
+        margin-top: 10px;
+        margin-left: 0px !important;
+    }
+}
+
+/* ==== Extra small devices (portrait phones, less than 576px) ==== */
+@media (max-width: 575.98px) {
+    /* ---- Jumbotron ---- */
+    .jumbotron {
+        height: 760px;
+    }
+
+    .jumbotron-content {
+        padding-top: 60px;
+    }
+
+    .name {
+        padding-top: 25px;
+        font-size: 45px;
+    }
+
+    .btn-download-cv {
+        margin-left: 7px;
+    }
+
+    /* ---- Profile ---- */
+    .profile-img {
+        height: 250px !important;
+        margin-top: 1px;
+    }
+
+    /* ---- Skill ---- */
+
+    /* ---- Experience ---- */
+
+    /* ---- Portfolio ---- */
+
+    /* ---- Contact ---- */
+
+    /* ---- Footer ---- */
+    .footer-bottom {
+        height: 130px;
+    }
+}
+
+/* ==== Small devices (landscape phones, 576px and up) ==== */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    /* ---- Jumbotron ---- */
+    .jumbotron {
+        height: 625px;
+    }
+
+    .jumbotron-content {
+        padding-top: 60px;
+    }
+
+    .jumbotron-hero-image {
+        height: 220px;
+    }
+
+    .name {
+        padding-top: 25px;
+        font-size: 45px
+    }
+
+    /* ---- Profile ---- */
+    .profile-img {
+        height: 250px !important;
+        margin-top: 1px;
+    }
+
+    /* ---- Footer ---- */
+    .footer-bottom {
+        height: 130px;
+    }
+}
+
+/* ==== Medium devices (tablets, 768px and up) ==== */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* ---- Jumbotron ---- */
+    .jumbotron {
+        height: 500px !important;
+    }
+
+    .jumbotron-content {
+        padding-top: 60px;
+    }
+
+}
+
+/* ==== Large devices (desktops, 992px and up) ==== */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    /* ---- Jumbotron ---- */
+    .jumbotron {
+        height: 100vh;
+    }
+
+    .jumbotron-content {
+        padding-top: 90px;
+    }
+
+    .name {
+        padding-top: 30px;
+        font-size: 50px;
+    }
+
+    .jumbotron-hero-image {
+        height: 300px;
+    }
+
+    /* ---- Portfolio ---- */
+    .portfolio-nav {
+        margin-top: -50px;
+    }
+}
+
+/* ==== Extra large devices (large desktops, 1200px and up) ==== */
+@media (min-width: 1200px) {
+    /* ---- Jumbotron ---- */
+    .jumbotron {
+        height: 100vh;
+    }
+
+    .jumbotron-content {
+        padding-top: 90px;
+    }
+
+    .name {
+        padding-top: 30px;
+        font-size: 50px;
+    }
+
+    .jumbotron-hero-image {
+        height: 325px;
+    }
+
+
+    /* ---- Profile ---- */
+    .profile-img {
+        height: 380px;
+    }
+
+    /* ---- Skill ---- */
+
+    /* ---- Experience ---- */
+
+    /* ---- Portfolio ---- */
+    .portfolio-nav {
+        margin-top: -50px;
+    }
+
+    /* ---- Contact ---- */
+    .contact-card {
+        width: 850px;
+        height: 140px;
+        margin: 0 auto;
+    }
+}
