@@ -4,10 +4,13 @@
         margin-top: 10px;
         margin-left: 0px !important;
     }
+
+    /* contact */
 }
 
 /* ==== Extra small devices (portrait phones, less than 576px) ==== */
 @media (max-width: 575.98px) {
+
     /* ---- Jumbotron ---- */
     .jumbotron {
         height: 760px;
@@ -39,6 +42,9 @@
     /* ---- portofolio ---- */
 
     /* ---- Contact ---- */
+    .contact-email, .contact-whatsapp {
+        font-size: 25px;
+    }
 
     /* ---- Footer ---- */
     .footer-bottom {
@@ -73,6 +79,11 @@
         margin-top: 1px;
     }
 
+    /* contact */
+    .contact-email, .contact-whatsapp {
+        font-size: 25px;
+    }
+
     /* ---- Footer ---- */
     .footer-bottom {
         height: 130px;
@@ -81,6 +92,7 @@
 
 /* ==== Medium devices (tablets, 768px and up) ==== */
 @media (min-width: 768px) and (max-width: 991.98px) {
+
     /* ---- Jumbotron ---- */
     .jumbotron {
         height: 500px !important;
@@ -88,6 +100,11 @@
 
     .jumbotron-content {
         padding-top: 60px;
+    }
+
+    /* contact */
+    .contact-email, .contact-whatsapp {
+        font-size: 30px;
     }
 
 }
@@ -117,10 +134,16 @@
     .portofolio-nav {
         margin-top: -50px;
     }
+
+    /* contact */
+    .contact-email, .contact-whatsapp {
+        font-size: 30px;
+    }
 }
 
 /* ==== Extra large devices (large desktops, 1200px and up) ==== */
 @media (min-width: 1200px) {
+
     /* ---- Jumbotron ---- */
     .jumbotron {
         height: 100vh;
@@ -158,5 +181,9 @@
     .contact-card {
         width: 850px;
         margin: 0 auto;
+    }
+
+    .contact-email, .contact-whatsapp {
+        font-size: 30px;
     }
 }
