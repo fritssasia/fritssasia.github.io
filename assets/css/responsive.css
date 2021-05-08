@@ -36,7 +36,7 @@
 
     /* ---- Experience ---- */
 
-    /* ---- Portfolio ---- */
+    /* ---- portofolio ---- */
 
     /* ---- Contact ---- */
 
@@ -113,8 +113,8 @@
         height: 300px;
     }
 
-    /* ---- Portfolio ---- */
-    .portfolio-nav {
+    /* ---- portofolio ---- */
+    .portofolio-nav {
         margin-top: -50px;
     }
 }
@@ -149,15 +149,14 @@
 
     /* ---- Experience ---- */
 
-    /* ---- Portfolio ---- */
-    .portfolio-nav {
+    /* ---- portofolio ---- */
+    .portofolio-nav {
         margin-top: -50px;
     }
 
     /* ---- Contact ---- */
     .contact-card {
         width: 850px;
-        height: 140px;
         margin: 0 auto;
     }
 }
