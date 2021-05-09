@@ -7,14 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1 shrink-to-fit=no">
     <meta name="theme-color" content="#7e22ce">
     <meta name="description" content="Rivas Frits Sasia Personal Website" />
-    <meta name="keywords" content="coding, programmer, developer, frontend, frontend-web, website, manado, rivas frits sasia" />
+    <meta name="keywords"
+        content="coding, programmer, developer, frontend, frontend-web, website, manado, rivas frits sasia" />
     <meta name="developer" content="Rivas Frits Sasia">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="/assets/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
     <!-- AOS CSS (Animation On Scroll) -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- SplideJS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
 
     <!-- Style CSS -->
     <link rel="stylesheet" href="/assets/css/style.css">
@@ -62,7 +68,7 @@
                         <a class="nav-link" href="#portofolio">Portofolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#portofolio">Testimoni</a>
+                        <a class="nav-link" href="#testimonial">Testimoni</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Kontak</a>
@@ -624,12 +630,115 @@
         </div>
     </div>
 
+    <!-- ==== Testimoni ==== -->
+    <div class="testimonial" id="testimonial">
+        <div class="container">
+            <h3 class="testimonial-heading font-inter text-right">Testimoni</h3>
+            <p class="color-3 text-right">Testimoni dari client yang projectnya pernah saya kerjakan</span></p>
+
+            <div class="splide" id="splide">
+                <div class="splide__arrows">
+                    <button class="splide__arrow splide__arrow--prev our-clients-splide-arrow">
+                        <ion-icon name="arrow-back-sharp"></ion-icon>
+                    </button>
+                    <button class="splide__arrow splide__arrow--next our-clients-splide-arrow">
+                        <ion-icon name="arrow-forward-sharp"></ion-icon>
+                    </button>
+                </div>
+                <div class="splide__track">
+                    <ul class="splide__list">
+
+                        <li class="splide__slide pt-5 pb-5">
+                            <div class="card testimonial-card">
+                                <div class="card-body color-2">
+
+                                    <img src="/assets/images/testimonial-img/quotation-symbol.png" alt="" loading="lazy"
+                                        class="quotation-symbol img-fluid">
+
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores delectus
+                                        distinctio doloremque enim suscipit? Rerum praesentium dolore inventore, fuga
+                                        ad, dicta, debitis quia vitae reprehenderit impedit eligendi facilis mollitia
+                                        voluptatem?</p>
+
+                                    <div class="testimonial-user-avatar">
+                                        <img src="/assets/images/testimonial-img/default-avatar.webp" alt=""
+                                            class="user-avatar-img float-left">
+                                    </div>
+
+                                    <div class="testimonial-user-detail pt-2 pt-lg-3 pt-md-3">
+                                        <p class="d-inline">Rivas Frits Sasia</p>
+                                        <footer class="blockquote-footer">Front End Web Developer</footer>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="splide__slide pt-5 pb-5">
+                            <div class="card testimonial-card">
+                                <div class="card-body color-2">
+
+                                    <img src="/assets/images/testimonial-img/quotation-symbol.png" alt="" loading="lazy"
+                                        class="quotation-symbol img-fluid">
+
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores delectus
+                                        distinctio doloremque enim suscipit? Rerum praesentium dolore inventore, fuga
+                                        ad, dicta, debitis quia vitae reprehenderit impedit eligendi facilis mollitia
+                                        voluptatem?</p>
+
+                                    <div class="testimonial-user-avatar">
+                                        <img src="/assets/images/testimonial-img/default-avatar.webp" alt=""
+                                            class="user-avatar-img float-left">
+                                    </div>
+
+                                    <div class="testimonial-user-detail pt-2 pt-lg-3 pt-md-3">
+                                        <p class="d-inline">Rivas Frits Sasia</p>
+                                        <footer class="blockquote-footer">Front End Web Developer</footer>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="splide__slide pt-5 pb-5">
+                            <div class="card testimonial-card">
+                                <div class="card-body color-2">
+
+                                    <img src="/assets/images/testimonial-img/quotation-symbol.png" alt="" loading="lazy"
+                                        class="quotation-symbol img-fluid">
+
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores delectus
+                                        distinctio doloremque enim suscipit? Rerum praesentium dolore inventore, fuga
+                                        ad, dicta, debitis quia vitae reprehenderit impedit eligendi facilis mollitia
+                                        voluptatem?</p>
+
+                                    <div class="testimonial-user-avatar">
+                                        <img src="/assets/images/testimonial-img/default-avatar.webp" alt=""
+                                            class="user-avatar-img float-left">
+                                    </div>
+
+                                    <div class="testimonial-user-detail pt-2 pt-lg-3 pt-md-3">
+                                        <p class="d-inline">Rivas Frits Sasia</p>
+                                        <footer class="blockquote-footer">Front End Web Developer</footer>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
 
     <!-- ==== Contact ==== -->
     <div class="contact" id="contact">
         <div class="container">
-            <h3 class="experience-heading font-inter text-right">Kontak</h3>
-            <p class="color-3 text-right">Tertarik menggunakan jasa saya?<br>Berikut kontak yang bisa dihubungi</p>
+            <h3 class="experience-heading font-inter text-left">Kontak</h3>
+            <p class="color-3 text-left">Tertarik menggunakan jasa saya?<br>Berikut kontak yang bisa dihubungi</p>
 
             <div class="card border-0 contact-card">
                 <div class="card-body">
@@ -639,12 +748,14 @@
 
                                 <div class="col-lg-6 col-md-6">
                                     <footer class="blockquote-footer text-white pt-1">Email</footer>
-                                    <a href="mailto:email@mail.com" class="font-inter contact-email text-white">email@mail.com</a>
+                                    <a href="mailto:email@mail.com"
+                                        class="font-inter contact-email text-white">email@mail.com</a>
                                 </div>
 
                                 <div class="col-lg-6 col-md-6 pt-1 pt-lg-1 pt-md-1">
-                                    <footer class="blockquote-footer text-white pt-1">WhatsApp</footer>
-                                    <a href="https://wa.me/6289631046822?text=Halo!" class="font-inter contact-whatsapp text-white">+62 896-3104-6822</a>
+                                    <footer class="blockquote-footer text-white pt-1 pt-lg-0">WhatsApp</footer>
+                                    <a href="https://wa.me/6289631046822?text=Halo!"
+                                        class="font-inter contact-whatsapp text-white">+62 896-3104-6822</a>
                                 </div>
 
                             </div>
@@ -694,12 +805,48 @@
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
     </script>
 
+    <!-- Script JS -->
+    <script src="/assets/js/script.js"></script>
+
+    <!-- Ionicons -->
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- SplideJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
 
     <!-- Initialize AOS -->
     <script>
         AOS.init();
+    </script>
+
+    <!-- SplideJS For Testimonial -->
+    <script>
+        new Splide('#splide', {
+            type: 'loop',
+            breakpoints: {
+                '576': {
+                    padding: {
+                        right: '0rem',
+                        left: '0rem',
+                    },
+                },
+                '768': {
+                    padding: {
+                        right: '3rem',
+                        left: '3rem',
+                    },
+                },
+                '1366': {
+                    padding: {
+                        right: '5rem',
+                        left: '5rem',
+                    },
+                },
+            }
+        }).mount();
     </script>
 
 </body>
