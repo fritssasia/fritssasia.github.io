@@ -71,7 +71,8 @@ body {
 .skill-heading,
 .experience-heading,
 .portofolio-heading,
-.contact-heading {
+.contact-heading,
+.testimonial-heading {
     padding-top: 65px;
 }
 
@@ -262,6 +263,23 @@ body {
 
 .portofolio-modal-btn {
     background-color: #7e22ce;
+}
+
+/* Testimoni */
+.testimonial-card {
+    margin-right: 50px !important;
+    margin-left: 50px !important;
+    border: 2px solid #7211f5;
+}
+
+.user-avatar-img {
+    width: 100px;
+}
+
+.quotation-symbol {
+    width: 60px;
+    opacity: 0.2;
+    margin-left: -15px;
 }
 
 /* ==== Contact ==== */
