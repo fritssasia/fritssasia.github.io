@@ -267,6 +267,7 @@ body {
 
 /* Testimoni */
 .splide__arrow {
+    font-size: 18px;
     background-color: #7e22ce;
     color: white;
     border: 2px solid #7e22ce;
