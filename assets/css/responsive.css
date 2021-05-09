@@ -5,6 +5,16 @@
         margin-left: 0px !important;
     }
 
+    /* ---- Testimonial ---- */
+    .testimonial-card {
+        margin-right: 5px !important;
+        margin-left: 5px !important;
+    }
+
+    .splide__arrow {
+        display: none;
+    }
+
     /* contact */
 }
 
@@ -39,10 +49,21 @@
 
     /* ---- Experience ---- */
 
-    /* ---- portofolio ---- */
+    /* ---- Portofolio ---- */
+
+    /* ---- Testimonial Card ---- */
+    .testimonial-card {
+        margin-right: 5px !important;
+        margin-left: 5px !important;
+    }
+
+    .splide__arrow {
+        display: none;
+    }
 
     /* ---- Contact ---- */
-    .contact-email, .contact-whatsapp {
+    .contact-email,
+    .contact-whatsapp {
         font-size: 25px;
     }
 
@@ -79,8 +100,19 @@
         margin-top: 1px;
     }
 
+    /* ---- Testimonial Card ---- */
+    .testimonial-card {
+        margin-right: 5px !important;
+        margin-left: 5px !important;
+    }
+
+    .splide__arrow {
+        display: none;
+    }
+
     /* contact */
-    .contact-email, .contact-whatsapp {
+    .contact-email,
+    .contact-whatsapp {
         font-size: 25px;
     }
 
@@ -102,8 +134,15 @@
         padding-top: 60px;
     }
 
+    /* ---- Testimonial Card ---- */
+    .testimonial-card {
+        margin-right: 50px !important;
+        margin-left: 50px !important;
+    }
+
     /* contact */
-    .contact-email, .contact-whatsapp {
+    .contact-email,
+    .contact-whatsapp {
         font-size: 30px;
     }
 
@@ -130,13 +169,20 @@
         height: 300px;
     }
 
-    /* ---- portofolio ---- */
+    /* ---- Portofolio ---- */
     .portofolio-nav {
         margin-top: -50px;
     }
 
+    /* ---- Testimonial ---- */
+    .testimonial-card {
+        margin-right: 50px !important;
+        margin-left: 50px !important;
+    }
+
     /* contact */
-    .contact-email, .contact-whatsapp {
+    .contact-email,
+    .contact-whatsapp {
         font-size: 30px;
     }
 }
@@ -177,13 +223,20 @@
         margin-top: -50px;
     }
 
+    /* ---- Testimonial ---- */
+    .testimonial-card {
+        margin-right: 50px !important;
+        margin-left: 50px !important;
+    }
+
     /* ---- Contact ---- */
     .contact-card {
         width: 850px;
         margin: 0 auto;
     }
 
-    .contact-email, .contact-whatsapp {
+    .contact-email,
+    .contact-whatsapp {
         font-size: 25px;
     }
 }
