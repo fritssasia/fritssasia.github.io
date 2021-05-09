@@ -266,9 +266,19 @@ body {
 }
 
 /* Testimoni */
+.splide__arrow {
+}
+
+.splide__pagination__page {
+    background-color: #be8ee9;
+}
+
+.splide__pagination__page.is-active {
+    background-color: #7e22ce;
+    opacity: 100;
+}
+
 .testimonial-card {
-    margin-right: 50px !important;
-    margin-left: 50px !important;
     border: 2px solid #7211f5;
 }
 
