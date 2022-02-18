@@ -22,11 +22,17 @@
     <!-- SplideJS CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
 
+    <!--  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Scroll Icon CSS -->
+    <link rel="stylesheet" href="assets/css/scroll-icon.css">
+
     <!-- Style CSS -->
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <!-- Responsive CSS -->
-    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 
     <!-- Fonts Roboto and Inter -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -42,13 +48,34 @@
 
 <body data-spy="scroll" data-target="#navbar" data-offset="0">
 
+    <style>
+        .under-dev {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(22, 22, 22, 0.8);
+            z-index: 50000 !important;
+            
+        }
+    </style>
+    
+    <div class="under-dev d-flex align-items-center justify-content-center">
+        <div class="d-flex align-items-center justify-content-center">
+            <h1 class="text-white">Under Development</h1>
+        </div>
+    </div>
+
     <!-- ==== Navbar ==== -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" id="navbar">
         <div class="container">
-            <a class="navbar-brand" href="#">Fritslx</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            <a class="navbar-brand" href="#home">Fritslx</a>
+            <button class="navbar-toggler border-0" style="outline: none;" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <img src="assets/images/icons/ic.png" alt="" class="" style="height: 20px;">
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="nav navbar-nav ml-auto">
@@ -68,10 +95,17 @@
                         <a class="nav-link" href="#portofolio">Portofolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#testimonial">Testimoni</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#contact">Kontak</a>
+                    </li>
+                    <li class="nav-item dropdown select-language">
+                        <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <ion-icon name="globe-outline" class="vertical-align-middle" style="font-size: 18px;"></ion-icon> <span class="vertical-align-middle">IDN</span>
+                        </a>
+                        <div class="dropdown-menu triangle-up" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item selected-lang" href="index.html">IDN</a>
+                            <a class="dropdown-item" href="#">EN</a>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -80,7 +114,7 @@
 
 
     <!-- ==== Jumbotron ==== -->
-    <div class="jumbotron jumbotron-fluid" id="home">
+    <div class="jumbotron jumbotron-fluid mb-0" id="home">
         <div class="container">
             <div class="jumbotron-content">
                 <div class="row">
@@ -88,13 +122,18 @@
                     <div class="col-lg-6 col-md-6 order-lg-first order-md-first" data-aos="fade-right"
                         data-aos-duration="800">
                         <h1 class="name font-inter color-2">RIVAS FRITS SASIA</h1>
-                        <p class="proffesion color-3">Halo saya Rivas Frits Sasia <span
-                                class="color-1 font-weight-medium">Junior
-                                Front End Web Developer</span> asal kota Manado Indonesia, lihat profil saya
-                            selengkapnya disini
+                        <p class="proffesion color-3"><span class="color-1 font-weight-medium">Front End Web Developer</span> asal kota Manado Indonesia
                         </p>
 
-                        <div class="btn-socmed-wrapper">
+                        <div class="list-contact pt-2">
+                            <ul style="list-style: none; padding: 0;">
+                                <li><a href="" class="btn-socmed color-2"><ion-icon name="mail" class="icon"></ion-icon><span class="pl-2">fritssasia@gmail.com</span></a></li>
+                                <li><a href="" class="btn-socmed color-2"><ion-icon name="call" class="icon"></ion-icon><span class="pl-2">+62 896 3104 6822</span></a></li>
+                                <li><a href="" class="btn-socmed color-2"><ion-icon name="location" class="icon"></ion-icon><span class="pl-2">Manado, Indonesia</span></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="btn-socmed-wrapper pt-2">
                             <a href="https://web.facebook.com/fritslx" class="btn-socmed color-2"><i
                                     class="fab fa-facebook-square"></i></a>
                             <a href="https://www.instagram.com/fritslx" class="btn-socmed color-2"><i
@@ -105,51 +144,43 @@
                                     class="fab fa-linkedin"></i></a>
                             <a href="https://github.com/fritssasia" class="btn-socmed color-2"><i
                                     class="fab fa-github-square"></i></a>
+                            <a href="https://github.com/fritssasia" class="btn-socmed color-2"><i class="fab fa-gitlab"></i></a>
                         </div>
 
-                        <div class="btn-explore-wrapper pt-3">
+                        <!-- <div class="btn-explore-wrapper pt-3">
                             <a href="#profile"
                                 class="btn btn-jumbotron btn-eksplor bg-color-1 text-white pr-4 pl-4 pt-2 pb-2"><i
                                     class="fas fa-search"></i> Eksplor</a>
-                            <!-- <a href="#profile"
+                            <a href="#profile"
                                 class="btn btn-jumbotron btn-download-cv bg-color-1 text-white ml-lg-2 ml-md-2 pr-4 pl-4 pt-2 pb-2"><i
-                                    class="fas fa-download"></i> Download CV</a> -->
-                        </div>
+                                    class="fas fa-download"></i> Download CV</a>
+                        </div> -->
 
                     </div>
 
                     <div class="col-lg-6 col-md-6 order-first" data-aos="zoom-in" data-aos-duration="1000"
                         data-aos-easing="ease-in-sine">
-                        <img src="/assets/images/me-img/fritssasia.webp" alt="rivas-frits-sasia" loading="lazy"
+                        <img src="/assets/images/me-img/fritssasia.png" alt="rivas-frits-sasia" loading="lazy"
                             class="jumbotron-hero-image img-fluid float-lg-right">
                     </div>
 
                 </div>
+                
             </div>
         </div>
     </div>
 
     <!-- ==== Profil ==== -->
-    <div class="profile" id="profile">
+    <div class="profile py-5" id="profile">
         <div class="container">
-            <h3 class="profile-heading font-inter text-right">Profil</h3>
-            <p class="color-3 text-right">Profil singkat tentang saya</p>
-            <div class="profile-content">
-                <div class="row">
-
-                    <div class="col-lg-6 col-md-6">
-                        <img src="/assets/images/about-img/about-img.webp" alt="" loading="lazy"
-                            class="profile-img img-fluid">
-                    </div>
-
-                    <div class="col-lg-6 col-md-6 profile-desc pt-3 pt-lg-0">
-                        <p class="color-3 text-justify">Halo! Saya Rivas Frits Sasia Junior Front End Web Developer asal
-                            kota Manado Indonesia. Saat ini saya bekerja sebagai freelancer dan menawarkan jasa
-                            pembuatan web statis landing page atau company profile sesuai dengan permintaan client, saya
-                            juga siap direkrut untuk bekerja tetap.
-                        </p>
-                    </div>
-
+            <div class="d-flex align-items-center">
+                <div class="d-block profile-content pt-3">
+                            <h3 class="profile-heading font-inter text-right">Profil</h3>
+                            <p class="text-right">Profil singkat tentang saya</p>
+                            <p class="text-justify">Halo! Saya Rivas Frits Sasia Front End Web Developer di
+                                R3S Team. Saya menerima jasa pembuatan web landing page, company profile, portofolio dan
+                                banyak lagi dengan harga yang terjangkau dan waktu pengerjaan yang cepat sesuai dengan
+                                permintaan client</p>
                 </div>
             </div>
         </div>
@@ -190,11 +221,11 @@
                                 aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Beginner</div>
                         </div>
 
-                        <p class="skill-vuejs pt-4"><i class="fab fa-vuejs"></i> Vue.js</p>
+                        <!-- <p class="skill-vuejs pt-4"><i class="fab fa-vuejs"></i> Vue.js</p>
                         <div class="progress skill-tools-progress">
                             <div class="progress-bar progress-bar-vuejs" role="progressbar" style="width: 25%;"
                                 aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Beginner</div>
-                        </div>
+                        </div> -->
 
                         <p class="skill-python pt-4"><i class="fab fa-python python-icon"></i> Python3</p>
                         <div class="progress skill-tools-progress">
@@ -278,7 +309,7 @@
 
                         <div class="card border-0 mt-4 experience-card">
                             <div class="card-body">
-                                <p class="color-2">Freelancer <span class="font-inter color-1">Junior Front End Web
+                                <p class="color-2">Freelancer <span class="font-inter color-1">Front End Web
                                         Developer</span></p>
                                 <p class="color-3"><span class="font-italic">2020 -
                                         Sekarang</span></p>
@@ -630,110 +661,6 @@
         </div>
     </div>
 
-    <!-- ==== Testimoni ==== -->
-    <div class="testimonial" id="testimonial">
-        <div class="container">
-            <h3 class="testimonial-heading font-inter text-right">Testimoni</h3>
-            <p class="color-3 text-right">Testimoni dari client yang projectnya pernah saya kerjakan</span></p>
-
-            <div class="splide" id="splide">
-                <div class="splide__arrows">
-                    <button class="splide__arrow splide__arrow--prev our-clients-splide-arrow ml-lg-5">
-                        <ion-icon name="caret-back-outline"></ion-icon>
-                    </button>
-                    <button class="splide__arrow splide__arrow--next our-clients-splide-arrow mr-lg-5">
-                        <ion-icon name="caret-forward-outline"></ion-icon>
-                    </button>
-                </div>
-                <div class="splide__track">
-                    <ul class="splide__list">
-
-                        <li class="splide__slide pt-5 pb-5">
-                            <div class="card testimonial-card">
-                                <div class="card-body color-2">
-
-                                    <img src="/assets/images/testimonial-img/quotation-symbol.png" alt="" loading="lazy"
-                                        class="quotation-symbol img-fluid">
-
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores delectus
-                                        distinctio doloremque enim suscipit? Rerum praesentium dolore inventore, fuga
-                                        ad, dicta, debitis quia vitae reprehenderit impedit eligendi facilis mollitia
-                                        voluptatem?</p>
-
-                                    <div class="testimonial-user-avatar">
-                                        <img src="/assets/images/testimonial-img/default-avatar.webp" alt=""
-                                            class="user-avatar-img float-left">
-                                    </div>
-
-                                    <div class="testimonial-user-detail pt-2 pt-lg-3 pt-md-3">
-                                        <p class="d-inline">Rivas Frits Sasia</p>
-                                        <footer class="blockquote-footer">Front End Web Developer</footer>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="splide__slide pt-5 pb-5">
-                            <div class="card testimonial-card">
-                                <div class="card-body color-2">
-
-                                    <img src="/assets/images/testimonial-img/quotation-symbol.png" alt="" loading="lazy"
-                                        class="quotation-symbol img-fluid">
-
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores delectus
-                                        distinctio doloremque enim suscipit? Rerum praesentium dolore inventore, fuga
-                                        ad, dicta, debitis quia vitae reprehenderit impedit eligendi facilis mollitia
-                                        voluptatem?</p>
-
-                                    <div class="testimonial-user-avatar">
-                                        <img src="/assets/images/testimonial-img/default-avatar.webp" alt=""
-                                            class="user-avatar-img float-left">
-                                    </div>
-
-                                    <div class="testimonial-user-detail pt-2 pt-lg-3 pt-md-3">
-                                        <p class="d-inline">Rivas Frits Sasia</p>
-                                        <footer class="blockquote-footer">Front End Web Developer</footer>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="splide__slide pt-5 pb-5">
-                            <div class="card testimonial-card">
-                                <div class="card-body color-2">
-
-                                    <img src="/assets/images/testimonial-img/quotation-symbol.png" alt="" loading="lazy"
-                                        class="quotation-symbol img-fluid">
-
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores delectus
-                                        distinctio doloremque enim suscipit? Rerum praesentium dolore inventore, fuga
-                                        ad, dicta, debitis quia vitae reprehenderit impedit eligendi facilis mollitia
-                                        voluptatem?</p>
-
-                                    <div class="testimonial-user-avatar">
-                                        <img src="/assets/images/testimonial-img/default-avatar.webp" alt=""
-                                            class="user-avatar-img float-left">
-                                    </div>
-
-                                    <div class="testimonial-user-detail pt-2 pt-lg-3 pt-md-3">
-                                        <p class="d-inline">Rivas Frits Sasia</p>
-                                        <footer class="blockquote-footer">Front End Web Developer</footer>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-
     <!-- ==== Contact ==== -->
     <div class="contact" id="contact">
         <div class="container">
@@ -817,36 +744,19 @@
     <!-- SplideJS -->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
 
+    <!-- Scroll Animation JS -->
+    <script>
+        $(function () {
+                $('a[href*=#]').on('click', function (e) {
+                    e.preventDefault();
+                    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top }, 500, 'linear');
+                });
+            });
+    </script>
+
     <!-- Initialize AOS -->
     <script>
         AOS.init();
-    </script>
-
-    <!-- SplideJS For Testimonial -->
-    <script>
-        new Splide('#splide', {
-            type: 'loop',
-            breakpoints: {
-                '576': {
-                    padding: {
-                        right: '0rem',
-                        left: '0rem',
-                    },
-                },
-                '768': {
-                    padding: {
-                        right: '3rem',
-                        left: '3rem',
-                    },
-                },
-                '1366': {
-                    padding: {
-                        right: '5rem',
-                        left: '5rem',
-                    },
-                },
-            }
-        }).mount();
     </script>
 
 </body>

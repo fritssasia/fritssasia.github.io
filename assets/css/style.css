@@ -1,9 +1,23 @@
+html, body {
+    overflow: hidden;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
     font-family: 'Roboto';
+}
+
+.vertical-align-middle {
+    vertical-align: middle;
+}
+
+/* Selection Style */
+::selection {
+    background-color: #7562E0;
+    color: #ffffff;
 }
 
 /* Scrollbar Style */
@@ -16,8 +30,8 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #7e22ce;
-    border-radius: 10px;
+    background: #7562E0;
+    border-radius: 4px;
 }
 
 .font-inter {
@@ -29,11 +43,11 @@ body {
 }
 
 .bg-color-1 {
-    background-color: #7e22ce;
+    background-color: #7562E0;
 }
 
 .color-1 {
-    color: #7e22ce;
+    color: #7562E0;
 }
 
 .color-2 {
@@ -46,7 +60,7 @@ body {
 
 /* ==== Navbar ==== */
 .navbar-brand {
-    color: #7e22ce !important;
+    color: #7562E0 !important;
     font-family: 'Inter';
 }
 
@@ -55,7 +69,15 @@ body {
 }
 
 .nav-item .active {
-    color: #7e22ce !important;
+    color: #7562E0 !important;
+}
+
+.nav-item .active::after {
+    content: '';
+    display: block;
+    border-bottom: 1px solid #7562E0;
+    width: 50%;
+    margin: auto;
 }
 
 .nav-link {
@@ -63,11 +85,58 @@ body {
 }
 
 .nav-link:hover {
-    color: #7e22ce !important;
+    color: #7562E0 !important;
+}
+
+.triangle-up::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-left: 13px solid transparent;
+    border-right: 11px solid transparent;
+    border-bottom: 11px solid #7562E0;
+    margin-left: 25px;
+    margin-top: -10px;
+}
+
+.nav-item.show .nav-link {
+    color: #7562E0 !important;
+}
+
+.nav-item.show .dropdown-menu {
+    min-width: 0px;
+    background-color: #7562E0;
+    color: #ffffff;
+    border: 0;
+    border-radius: 4px;
+    margin-top: 3px;
+}
+
+.nav-item.show .dropdown-menu a {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.nav-item.show .dropdown-menu a:hover {
+    background-color: #ffffff;
+    color: #7562E0;
+}
+
+.nav-item.show .dropdown-item {
+    border: 2px solid #7562E0;
+    border-radius: 4px;
+}
+
+.nav-item.show .dropdown-item.selected-lang {
+    background-color: #ffffff;
+    color: #7562E0;
+    border-radius: 4px;
 }
 
 /* ==== Padding Per Page ==== */
-.profile-heading,
 .skill-heading,
 .experience-heading,
 .portofolio-heading,
@@ -82,13 +151,26 @@ body {
     height: 100vh;
 }
 
+.jumbotron .list-contact a {
+    text-decoration: none;
+}
+
+.jumbotron .list-contact span {
+    font-size: 15px;
+}
+
+.jumbotron .list-contact .icon {
+    font-size: 17px;
+    vertical-align: middle;
+}
+
 .btn-socmed {
     margin-right: 10px;
     font-size: 20px;
 }
 
 .btn-socmed:hover {
-    color: #7e22ce;
+    color: #7562E0;
     transition: all 0.3s;
 }
 
@@ -106,10 +188,9 @@ body {
 }
 
 /* ==== Profile ==== */
-.profile-img {
-    height: 300px !important;
-    margin-top: -100px;
-    object-fit: cover;
+#profile {
+    background-color: #7562E0;
+    color: #ffffff;
 }
 
 /* ==== Skill ==== */
@@ -226,7 +307,7 @@ body {
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #7e22ce;
+    background-color: #7562E0;
 }
 
 .portofolio-image-wrapper:hover .portofolio-img-overlay {
@@ -257,34 +338,34 @@ body {
 }
 
 .portofolio-modal-tag {
-    border: 1px solid #7e22ce;
+    border: 1px solid #7562E0;
     border-radius: 5px;
 }
 
 .portofolio-modal-btn {
-    background-color: #7e22ce;
+    background-color: #7562E0;
 }
 
 /* Testimoni */
 .splide__arrow {
     font-size: 18px;
-    background-color: #7e22ce;
+    background-color: #7562E0;
     color: white;
-    border: 2px solid #7e22ce;
+    border: 2px solid #7562E0;
     opacity: 100 !important;
     transition: 0.2s ease-out;
 }
 
 .splide__arrow:hover {
     background-color: transparent;
-    color: #7e22ce;
+    color: #7562E0;
     transition: 0.2s ease-out;
 }
 
 .splide__arrow:active {
-    background-color: #7e22ce;
+    background-color: #7562E0;
     color: white;
-    border: 2px solid #7e22ce;
+    border: 2px solid #7562E0;
     opacity: 100 !important;
     transition: 0.2s ease-in-out;
 }
@@ -294,7 +375,7 @@ body {
 }
 
 .splide__pagination__page.is-active {
-    background-color: #7e22ce;
+    background-color: #7562E0;
     opacity: 100;
 }
 
@@ -314,7 +395,7 @@ body {
 
 /* ==== Contact ==== */
 .contact-card {
-    background-color: #7e22ce;
+    background-color: #7562E0;
     color: white;
 }
 
@@ -324,12 +405,12 @@ body {
 
 .btn-say-hello {
     background-color: white;
-    color: #7e22ce;
+    color: #7562E0;
     margin-top: 25px;
 }
 
 .btn-say-hello:hover {
-    color: #7e22ce;
+    color: #7562E0;
     box-shadow: 2px, 2px, 2px white;
 }
 
